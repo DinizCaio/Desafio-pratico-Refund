@@ -1,5 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -53,7 +53,7 @@
                 type="text"
                 name="amount"
                 id="amount"
-                placeholder="0,00"
+                placeholder="R$ 0,00"
                 required
               />
             </fieldset>
@@ -66,13 +66,14 @@
           <header>
             <p>
               Minhas solicitações <i>&bullet;</i>
-              <span>0 despesas</span>
+              <span id="quantity">0 despesa</span>
             </p>
-            <h2><small>R$</small>0,00</h2>
+            <h2 id="total"><small>R$</small>0,00</h2>
           </header>
 
           <ul>
-            <li class="expense">
+            <!-- Exemplo de despesa adicionada. O código abaixo deve ser gerado dinamicamente via JavaScript
+             <li class="expense">
               <img src="./img/food.svg" alt="Ícone de tipo da despesa" />
 
               <div class="expense-info">
@@ -84,9 +85,11 @@
 
               <img src="./img/remove.svg" alt="remover" class="remove-icon" />
             </li>
+            -->
           </ul>
         </aside>
       </section>
     </main>
+    <script src="script.js"></script>
   </body>
 </html>
